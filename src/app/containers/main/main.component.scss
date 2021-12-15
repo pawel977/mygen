@@ -1,0 +1,16 @@
+.wrapper {
+  position: relative;
+
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 999;
+}
+
+.map-wrapper {
+  height: 200px;
+}

@@ -1,0 +1,7 @@
+<div>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+    <input formControlName="address">
+    <button type="submit" [disabled]="(isLoading$() | async)" >
+      {{(isLoading$() | async ) ? ('wait' | translate) :('download' | translate)}}</button>
+  </form>
+</div>

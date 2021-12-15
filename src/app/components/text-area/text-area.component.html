@@ -1,0 +1,3 @@
+<div *ngIf="(getValue$() | async) as stream">
+  <textarea class="texarea" [value]="stream | json" rows="15" readonly></textarea>
+</div>

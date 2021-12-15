@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
+import {Languages} from "./global/enums/languages";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mygen';
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang(Languages.POLAND);
+  }
 }
